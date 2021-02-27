@@ -1,0 +1,181 @@
+(pcb "\\Warpnas01\pcb\Georg\KiCAD\BDM-Elise-Adapter_V3\BDM-Elise-Adapter.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2013-07-07 BZR 4022)-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  81280 -25400  82550 -25400  82550 -44450  46990 -44450
+            46990 -25400  48260 -25400  81280 -25400)
+    )
+    (via "Via[0-1]_889:635_um" "Via[0-1]_889:0_um")
+    (rule
+      (width 350)
+      (clearance 25.1)
+      (clearance 25.1 (type default_smd))
+      (clearance 6.25 (type smd_smd))
+    )
+  )
+  (placement
+    (component PIN_ARRAY_5x2_1.27mm
+      (place TARGET1 63500 -40640 back 270 (PN CONN_5X2))
+    )
+    (component PIN_ARRAY_5x2
+      (place BDM2USB1 77470 -35560 front 270 (PN CONN_5X2))
+    )
+    (component PIN_ARRAY_5x1
+      (place P3 68580 -35560 front 90 (PN CONN_5))
+      (place P1 52070 -35560 front 270 (PN CONN_5))
+    )
+  )
+  (library
+    (image PIN_ARRAY_5x2_1.27mm
+      (outline (path signal 150  0 0  9500 0))
+      (outline (path signal 150  9500 0  9500 -5500))
+      (outline (path signal 150  9500 -5500  9500 -5700))
+      (outline (path signal 150  9500 -5700  0 -5700))
+      (outline (path signal 150  0 -5700  0 0))
+      (pin Rect[T]Pad_730x2700_um 2 2160 -500)
+      (pin Rect[T]Pad_730x2700_um 4 3430 -500)
+      (pin Rect[T]Pad_730x2700_um 6 4700 -500)
+      (pin Rect[T]Pad_730x2700_um 8 5970 -500)
+      (pin Rect[T]Pad_730x2700_um 10 7240 -500)
+      (pin Rect[T]Pad_730x2700_um 1 2160 -5200)
+      (pin Rect[T]Pad_730x2700_um 3 3430 -5200)
+      (pin Rect[T]Pad_730x2700_um 5 4700 -5200)
+      (pin Rect[T]Pad_730x2700_um 7 5970 -5200)
+      (pin Rect[T]Pad_730x2700_um 9 7240 -5200)
+      (keepout "" (circle F.Cu 0 500 -2850))
+      (keepout "" (circle B.Cu 0 500 -2850))
+      (keepout "" (circle F.Cu 0 8900 -2850))
+      (keepout "" (circle B.Cu 0 8900 -2850))
+    )
+    (image PIN_ARRAY_5x2
+      (outline (path signal 304.8  -6350 2540  6350 2540))
+      (outline (path signal 304.8  6350 2540  6350 -2540))
+      (outline (path signal 304.8  6350 -2540  -6350 -2540))
+      (outline (path signal 304.8  -6350 -2540  -6350 2540))
+      (pin Rect[A]Pad_1824x1824_um 1 -5080 -1270)
+      (pin Round[A]Pad_1924_um 2 -5080 1270)
+      (pin Round[A]Pad_1924_um 3 -2540 -1270)
+      (pin Round[A]Pad_110_um 4 -2540 1270)
+      (pin Round[A]Pad_1924_um 5 0 -1270)
+      (pin Round[A]Pad_110_um 6 0 1270)
+      (pin Round[A]Pad_1924_um 7 2540 -1270)
+      (pin Round[A]Pad_1924_um 8 2540 1270)
+      (pin Round[A]Pad_1924_um 9 5080 -1270)
+      (pin Round[A]Pad_1924_um 10 5080 1270)
+    )
+    (image PIN_ARRAY_5x1
+      (outline (path signal 304.8  -6350 1270  -6350 -1270))
+      (outline (path signal 304.8  6350 -1270  6350 1270))
+      (outline (path signal 304.8  -6350 1270  6350 1270))
+      (outline (path signal 304.8  6350 -1270  -6350 -1270))
+      (pin Rect[A]Pad_1824x1824_um 1 -5080 0)
+      (pin Round[A]Pad_1824_um 2 -2540 0)
+      (pin Round[A]Pad_1824_um 3 0 0)
+      (pin Round[A]Pad_1824_um 4 2540 0)
+      (pin Round[A]Pad_1824_um 5 5080 0)
+    )
+    (padstack Round[A]Pad_110_um
+      (shape (circle F.Cu 110))
+      (shape (circle B.Cu 110))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1824_um
+      (shape (circle F.Cu 1824))
+      (shape (circle B.Cu 1824))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1924_um
+      (shape (circle F.Cu 1924))
+      (shape (circle B.Cu 1924))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_730x2700_um
+      (shape (rect F.Cu -365 -1350 365 1350))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1824x1824_um
+      (shape (rect F.Cu -912 -912 912 912))
+      (shape (rect B.Cu -912 -912 912 912))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:635_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:0_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+  )
+  (network
+    (net DSCK
+      (pins TARGET1-7 BDM2USB1-3 P1-2)
+    )
+    (net DSDI
+      (pins TARGET1-3 BDM2USB1-5 P1-4)
+    )
+    (net DSDO
+      (pins TARGET1-1 BDM2USB1-10 P1-5)
+    )
+    (net GND
+      (pins TARGET1-6 TARGET1-8 BDM2USB1-9 P3-3 P3-4)
+    )
+    (net HRESET
+      (pins TARGET1-4 BDM2USB1-2 P3-2)
+    )
+    (net "N-000001"
+      (pins TARGET1-10 P3-5)
+    )
+    (net "N-000002"
+      (pins TARGET1-5 P1-3)
+    )
+    (net POWER
+      (pins TARGET1-2 BDM2USB1-7 BDM2USB1-8 P3-1)
+    )
+    (net SRESET
+      (pins TARGET1-9 BDM2USB1-1 P1-1)
+    )
+    (class kicad_default "" DSCK DSDI DSDO HRESET "N-000001" "N-000002" POWER
+      SRESET
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 350)
+        (clearance 25.1)
+      )
+    )
+    (class thicker GND
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 550)
+        (clearance 25.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

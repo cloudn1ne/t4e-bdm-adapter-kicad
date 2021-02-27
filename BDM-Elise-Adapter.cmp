@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 10/01/2016 22:58:04
+
+BeginCmp
+TimeStamp = /5692D17B;
+Reference = BDM2USB1;
+ValeurCmp = CONN_5X2;
+IdModule  = PIN_ARRAY_5x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5526D6E0;
+Reference = P1;
+ValeurCmp = CONN_5;
+IdModule  = PIN_ARRAY_5x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5526D6D3;
+Reference = P3;
+ValeurCmp = CONN_5;
+IdModule  = PIN_ARRAY_5x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5526E64B;
+Reference = TARGET1;
+ValeurCmp = CONN_5X2;
+IdModule  = PIN_ARRAY_5x2_1.27mm;
+EndCmp
+
+EndListe
